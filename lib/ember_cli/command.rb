@@ -38,7 +38,7 @@ module EmberCli
         "--environment :environment",
         "--output-path :output_path",
       ].compact.join(" "))
-
+      puts line.command
       line.command(
         environment: build_environment,
         output_path: paths.dist,
